@@ -1,0 +1,286 @@
+
+
+a {
+    color: #605A60;
+}
+
+b:hover {
+    /* color: #605A60;  */
+    color: #D7D6D7;
+    font-weight: bolder;
+}
+
+/* i {
+    color: #605A60;
+} */
+
+#angle-right-icon {
+    position: right;
+    color:#FE7B45;
+}
+
+nav.navbar.navbar-expand-lg {
+    background-color:#D7D6D7;
+    /* background-color:#4CCEDC;
+    background-color:#F52334;
+    background-color:#F9B346;
+    background-color:#16C985;
+    background-color:#FE7B45;
+    background-color:#FF7282;
+    background-color:#D7D6D7;
+    background-color:#605A60;
+    background-color:#F52031;
+    background-color:#707070; */
+}
+
+/* .col {
+    background-color: #605A60;
+} */
+
+#Home-nav-btn:hover {
+    /* text-decoration-line: none; */
+    color:rgb(254, 69, 140);
+    /* color: #605A60; */
+}
+
+#StudyProgram-nav-text:hover {
+    color: #605A60;
+    /* padding-right: -10% */
+}
+
+#Professor-nav-text:hover {
+    color: #605A60;
+    /* padding-right: 100%; */
+    /* background-color: #4CCEDC; */
+}
+
+#AssessmentResult-nav-text:hover {
+    color: #605A60;
+}
+
+/* -------------------------------- main_menu -------------------------------- */
+
+#StudyProgram-btn {
+    background-color: #4CCEDC;
+    height: 100%;
+    padding-top: 17.5%;
+    padding-bottom: 10%
+}
+
+#Assessment-btn {
+    background-color:#F9B346;
+    height: 100%;
+    padding-top: 17.5%;
+    padding-bottom: 10%
+}
+
+#Professors-btn {
+    background-color:#FF7282;
+    height: 100%;
+    padding-top: 17.5%;
+    padding-bottom: 10%
+}
+
+#Inbox-btn {
+    background-color:#16C985;
+    height: 100%; /* 350px; */
+    padding-top: 17.5%;
+    padding-bottom: 10%
+}
+
+/* -------------------------------- assessment_menu -------------------------------- */
+
+#AssessmentResults-btn {
+    background-color:#FF7282;
+    height: 100%;
+    padding-top: 17.5%;
+    padding-bottom: 10%;
+}
+
+#CommitteeList-btn {
+    background-color:#FE7B45;
+    height: 100%;
+    padding-top: 17.5%;
+    padding-bottom: 10%
+}
+
+#CommitteeSchedule-btn {
+    background-color:#F52334;
+    height: 100%;
+    padding-top: 17.5%;
+    padding-bottom: 10%
+}
+
+#TEMP-btn {
+    background-color:#707070;
+    height: 100%;
+    padding-top: 17.5%;
+    padding-bottom: 10%
+}
+
+/* -------------------------------- all_program -------------------------------- */
+
+#all_program-container-1 {
+    background-color:#D7D6D7;
+    /* border: 1px solid #707070; */
+}
+#all_program-container-2 {
+    background-color:#D7D6D7;
+    /* border: 1px solid #707070; */
+    padding-bottom: 15px;
+}
+
+#all_program-container-3 {
+    background-color:#D7D6D7;
+    /* border: 1px solid #707070; */
+}
+
+#faculties-nav-dropdown {
+    border: 1px solid #f80a0a;
+    background-color:rgb(160, 17, 160);
+}
+
+/* #ExportCSV-btn {
+    padding-right: 50%;
+    padding-left: 50%;
+} */
+
+/* -------------------------------- program_detail -------------------------------- */
+
+#program_detail-container-title {
+    background-color:#D7D6D7;
+    padding-bottom: 15px;
+    /* border: 1px solid #707070; */
+
+}
+
+#basic_info-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: bold;
+    /* border: 1px solid #707070; */
+}
+
+#responsible_professor-container {
+    background-color:#D7D6D7;
+    /* border: 1px solid #707070; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#assesment_result-container {
+    background-color:#D7D6D7;
+    /* border: 1px solid #707070; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* -------------------------------- all_professor -------------------------------- */
+
+#all_professor-container-1 {
+    background-color:#D7D6D7;
+    /* border: 1px solid #707070; */
+}
+#all_professor-container-2 {
+    background-color:#D7D6D7;
+    /* border: 1px solid #707070; */
+    padding-bottom: 15px;
+}
+
+#all_professor-container-3 {
+    background-color:#D7D6D7;
+    /* border: 1px solid #707070; */
+}
+
+/* -------------------------------- professor_profile -------------------------------- */
+
+#professor_profile-container-title {
+    background-color:#D7D6D7;
+    padding-bottom: 15px;
+    /* border: 1px solid #707070; */
+}
+
+#education-info-container {
+    background-color:#D7D6D7;
+    /* border: 1px solid #707070; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#responsible_program-container {
+    background-color:#D7D6D7;
+    /* border: 1px solid #707070; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* -------------------------------- all_assessment -------------------------------- */
+
+#all_assessment-container-1 {
+    background-color:#D7D6D7;
+    /* border: 1px solid #707070; */
+}
+#all_assessment-container-2 {
+    background-color:#D7D6D7;
+    /* border: 1px solid #707070; */
+    padding-bottom: 15px;
+}
+
+#all_assessment-container-3 {
+    background-color:#D7D6D7;
+    /* border: 1px solid #707070; */
+}
+
+/* -------------------------------- assessment_result -------------------------------- */
+
+#assessment_result-container-title {
+    background-color:#D7D6D7;
+    padding-bottom: 15px;
+    /* border: 1px solid #707070; */
+}
+
+#responsible_committe-container {
+    background-color:#D7D6D7;
+    /* border: 1px solid #707070; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#aun-container {
+    background-color:#D7D6D7;
+    /* border: 1px solid #707070; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+/* -------------------------------- all_committee -------------------------------- */
+
+#all_committee-container-1 {
+    background-color:#D7D6D7;
+    /* border: 1px solid #707070; */
+}
+#all_committee-container-2 {
+    background-color:#D7D6D7;
+    /* border: 1px solid #707070; */
+    padding-bottom: 15px;
+}
+
+#all_committee-container-3 {
+    background-color:#D7D6D7;
+    /* border: 1px solid #707070; */
+}
+
+/* -------------------------------- committee_detail -------------------------------- */
+
+#committee_detail-container-title {
+    background-color:#D7D6D7;
+    padding-bottom: 15px;
+    /* border: 1px solid #707070; */
+}
+
+#assessment_result-container {
+    background-color:#D7D6D7;
+    /* border: 1px solid #707070; */
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

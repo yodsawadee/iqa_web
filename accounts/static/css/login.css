@@ -1,0 +1,13 @@
+/* #login-container {
+    background-color:rgb(226, 125, 43);
+} */
+
+#login-left {
+    padding-top: 10%;
+    background-color:#D7D6D7;
+    /* background-color:rgb(245, 155, 245); */
+}
+
+#login-right {
+    background-color:#D7D6D7;
+}

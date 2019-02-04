@@ -1,0 +1,152 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<div class="container">
+
+    <br />
+    <br />
+    <!-- PROGRAM LIST HEADER -->
+    <div id="all_program-container-1" class="container">
+        <br />
+        <div class="col">
+            <div class="row">
+                {% if request.user.is_superuser %}
+                <div class="col-md-8 mr-4">
+                    <h1>Study Program</h1>
+                </div>
+
+                <div class="ml-auto">
+                    <form method="GET" action="{% url 'all_program' current_page %}">
+                        <button id="ExportCSV-btn" type="submit" class="btn btn-outline-success mr-4 ml-4">Export CSV</button>
+                    </form>
+                </div>
+
+                <!-- CREATE STUDY PROGRAM -->
+                <form method="GET" action="{% url 'create_study_program' %}">
+                    <button type="submit" class="btn btn-outline-success">Add Program</button>
+                </form>
+                {% else %}
+                <div class="col-md-10 mr-4">
+                    <h1>Study Program</h1>
+                </div>
+
+                <form method="GET" action="{% url 'all_program' current_page %}">
+                    <button id="ExportCSV-btn" type="submit" class="btn btn-outline-success ml-4">Export CSV</button>
+                </form>
+                {% endif %}
+            </div>
+        </div>
+
+        <br />
+
+
+    </div>
+
+    <!-- CREATE STUDY PROGRAM -->
+    <!-- {% if request.user.is_superuser %}
+    <form method="GET" action="{% url 'create_study_program' %}">
+        <button type="submit" class="text-right text-light btn btn-dark col-md-12">+ Add Study Program</button>
+    </form>
+    {% else %}
+    {% endif %} -->
+
+
+    <!-- NAVBAR -->
+    <nav id="all_program-container-2" class="navbar navbar-expand-lg">
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+
+            <ul class="navbar-nav mr-auto">
+                <!-- <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Year
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="2015">2015</a>
+                        <a class="dropdown-item" href="2016">2016</a>
+                        <a class="dropdown-item" href="2017">2017</a>
+                        <a class="dropdown-item" href="2018">2018</a>
+                        <a class="dropdown-item" href="2019">2019</a>
+                    </div>
+                </li> -->
+
+                <li id="faculties-nav-dropdown" class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        Faculties
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        {% for key, value in faculties.items %}
+                        <a class="dropdown-item" href="{{key}}">{{ value }}</a>
+                        {% endfor %}
+                    </div>
+                </li>
+
+
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0" action="{% url 'all_program' current_page %}" method="get">
+                <!-- submit query -->
+                <div class="md-form mt-0">
+                    <i class="fas fa-search" aria-hidden="true"></i>
+                    <input class="form-control col-md-12 mr-sm-2 ml-2" name="faculty_name" type="search" placeholder="Search Program..."
+                        aria-label="Search" value={{request.GET.faculty_name}}>
+                </div>
+
+
+                <!-- <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button> -->
+            </form>
+
+            <!-- <div class="input-group md-form form-sm form-2 pl-0">
+                <input class="form-control my-0 py-1 red-border" type="text" placeholder="Search" aria-label="Search">
+                <div class="input-group-append">
+                    <span class="input-group-text red lighten-3" id="basic-text1"><i class="fas fa-search text-grey"
+                            aria-hidden="true"></i></span>
+                </div>
+            </div> -->
+
+
+        </div>
+    </nav>
+
+    <br />
+
+
+    <!-- PROGRAM LIST -->
+    <div class="bg-light">
+        <ul class="list-group">
+            {% for program in programs %}
+            <a class="list-group-item list-group-item-light bg-light" href="{% url 'program_detail' program.id %}">
+                <h6>{{ program.code}} : {{ program.name }}
+                    <i id="angle-right-icon" class="fas fa-angle-right"></i>
+                </h6>
+            </a>
+            {% endfor %}
+        </ul>
+
+    </div>
+
+    <!-- CHANGE PAGE -->
+    <div id="all_program-container-3" class="container text-center">
+        <div class="btn-group" role="group" aria-label="Basic example">
+            <a class="btn" href="{% url 'all_program' prev_page %}">back</a>
+            <button type="button" class="btn">{{current_page}}</button>
+            <!-- <button type="button" class="btn" href="{% url 'all_program' prev_page %}"></button>{{prev_page}}</button>
+            <button type="button" class="btn" href="{% url 'all_program' current_page %}"></button>{{current_page}}</button>
+            <button type="button" class="btn" href="{% url 'all_program' next_page %}"></button>{{next_page}}</button> -->
+            <a class="btn" href="{% url 'all_program' next_page %}">next</a>
+
+            <!-- <a class="btn btn-secondary border-info bg-info" href="{% url 'all_program' next_page %}">next</a> -->
+        </div>
+        <br />
+    </div>
+
+
+
+
+</div>
+
+{% endblock %}
